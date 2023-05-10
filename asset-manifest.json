@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/hospitalApp/static/css/main.7acaea2f.css",
+    "main.js": "/hospitalApp/static/js/main.d842550c.js",
+    "index.html": "/hospitalApp/index.html",
+    "main.7acaea2f.css.map": "/hospitalApp/static/css/main.7acaea2f.css.map",
+    "main.d842550c.js.map": "/hospitalApp/static/js/main.d842550c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7acaea2f.css",
+    "static/js/main.d842550c.js"
+  ]
+}
