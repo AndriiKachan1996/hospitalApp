@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkhospitalapp=self.webpackChunkhospitalapp||[]).push([[693],{693:function(e,a,n){n.r(a);var p=n(184);a.default=function(){return(0,p.jsx)(p.Fragment,{children:"movies"})}}}]);
+//# sourceMappingURL=693.ae768b75.chunk.js.map

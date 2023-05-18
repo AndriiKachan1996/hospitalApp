@@ -1,13 +1,20 @@
 {
   "files": {
-    "main.css": "/hospitalApp/static/css/main.7acaea2f.css",
-    "main.js": "/hospitalApp/static/js/main.d842550c.js",
+    "main.css": "/hospitalApp/static/css/main.a5791a42.css",
+    "main.js": "/hospitalApp/static/js/main.e463ad68.js",
+    "static/js/544.6ddcc245.chunk.js": "/hospitalApp/static/js/544.6ddcc245.chunk.js",
+    "static/js/693.ae768b75.chunk.js": "/hospitalApp/static/js/693.ae768b75.chunk.js",
+    "static/js/597.ddfd9db0.chunk.js": "/hospitalApp/static/js/597.ddfd9db0.chunk.js",
+    "static/media/logo.png": "/hospitalApp/static/media/logo.6b719daa209b3d27c384.png",
     "index.html": "/hospitalApp/index.html",
-    "main.7acaea2f.css.map": "/hospitalApp/static/css/main.7acaea2f.css.map",
-    "main.d842550c.js.map": "/hospitalApp/static/js/main.d842550c.js.map"
+    "main.a5791a42.css.map": "/hospitalApp/static/css/main.a5791a42.css.map",
+    "main.e463ad68.js.map": "/hospitalApp/static/js/main.e463ad68.js.map",
+    "544.6ddcc245.chunk.js.map": "/hospitalApp/static/js/544.6ddcc245.chunk.js.map",
+    "693.ae768b75.chunk.js.map": "/hospitalApp/static/js/693.ae768b75.chunk.js.map",
+    "597.ddfd9db0.chunk.js.map": "/hospitalApp/static/js/597.ddfd9db0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7acaea2f.css",
-    "static/js/main.d842550c.js"
+    "static/css/main.a5791a42.css",
+    "static/js/main.e463ad68.js"
   ]
 }
