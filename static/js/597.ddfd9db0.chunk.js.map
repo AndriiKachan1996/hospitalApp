@@ -1,1 +1,0 @@
-{"version":3,"file":"static/js/597.ddfd9db0.chunk.js","mappings":"kIAIA,UAJoB,WAClB,OAAO,6CACR,C","sources":["pages/PaidService/PaidService.jsx"],"sourcesContent":["const PaidService = () => {\n  return <>PaidService</>;\n};\n\nexport default PaidService;\n"],"names":[],"sourceRoot":""}

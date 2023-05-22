@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkhospitalapp=self.webpackChunkhospitalapp||[]).push([[597],{5597:function(e,a,n){n.r(a);var p=n(184);a.default=function(){return(0,p.jsx)(p.Fragment,{children:"PaidService"})}}}]);
+//# sourceMappingURL=597.f9ca5fdc.chunk.js.map
