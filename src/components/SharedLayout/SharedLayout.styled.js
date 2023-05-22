@@ -15,6 +15,10 @@ export const Nav = styled.nav`
   display: flex;
   padding: 30px;
   align-items: center;
+
+  @media screen and (max-width: 820px) {
+    display: none;
+  }
 `;
 
 export const NavItem = styled(NavLink)`
@@ -45,14 +49,22 @@ export const Logo = styled.img`
   display: block;
   margin-bottom: -50px;
   border-radius: 50%;
+  z-index: 1;
+
+  @media screen and (max-width: 820px) {
+    width: 80px;
+    height: 80px;
+    margin-left: 15px;
+  }
 `;
 
 export const ContactList = styled.ul`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-left: 1px solid #166c65;
-  padding-left: 10px;
+  @media screen and (max-width: 820px) {
+    display: none;
+  }
 `;
 
 export const ContactItem = styled.li`
@@ -75,6 +87,15 @@ export const Link = styled.a`
   }
   &:hover {
     color: #26c0b4;
+  }
+`;
+
+export const MenuBtn = styled.button`
+  cursor: pointer;
+  margin: 30px;
+  background-color: red;
+  @media screen and (min-width: 820px) {
+    display: none;
   }
 `;
 

@@ -12,6 +12,7 @@ import {
 } from './SharedLayout.styled';
 import { Container } from 'components/common.styled';
 import logo from '..//..//picture/logo.png';
+import MobileBtn from 'components/MobileBtn/MobileBtn';
 
 const SharedLayout = () => {
   const location = useLocation();
@@ -57,6 +58,8 @@ const SharedLayout = () => {
                 </Link>
               </ContactItem>
             </ContactList>
+            {/* <MenuBtn type="buton">MENU</MenuBtn> */}
+            <MobileBtn maxHeight={300}></MobileBtn>
           </HeaderWrapp>
         </Container>
       </Header>
@@ -70,22 +73,3 @@ const SharedLayout = () => {
 };
 
 export default SharedLayout;
-
-<ul className="contacts-header list">
-  <li className="contacts-header__item">
-    <a href="mailto:info@devstudio.com" className="contacts-header__link link">
-      <svg className="contacts-header__icon" width="16" height="12">
-        <use href="./image/icon.svg#icon-envelope"></use>
-      </svg>
-      knpkor_kodl2@ukr.net
-    </a>
-  </li>
-  <li className="contacts-header__item">
-    <a href="tel:+380961111111" className="contacts-header__link link">
-      <svg className="contacts-header__icon" width="10" height="16">
-        <use href="./image/icon.svg#icon-smartphone"></use>
-      </svg>
-      045-63-5-36-74
-    </a>
-  </li>
-</ul>;
