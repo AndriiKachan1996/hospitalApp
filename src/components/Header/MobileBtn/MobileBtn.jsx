@@ -1,18 +1,32 @@
 import React, { useState } from 'react';
+import { NavLink, useLocation } from 'react-router-dom';
 import IconButton from '@mui/material/IconButton';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
-import MoreVertIcon from '@mui/icons-material/MoreVert';
+
 import { useMediaQuery } from '@mui/material';
 
-const options = ['Головна', 'Наша Команда', 'Платні послуги'];
+import { MobileBtnSVG } from 'components/SVGcomponents/MobileBtnSVG';
+
+const options = [
+  { label: 'Головна', path: '/' },
+  { label: 'Наша Команда', path: '/team' },
+  { label: 'Платні послуги', path: '/paid-service' },
+];
 
 const ITEM_HEIGHT = 48;
+
+const active = {
+  color: 'red' /* Колір для активного посилання */,
+  fontWeight: 'bold' /* Напівжирний шрифт для активного посилання */,
+  /* Додаткові стилі, які ви хочете застосувати для активного посилання */
+};
 
 const MobileBtn = () => {
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
-  const isMobileView = useMediaQuery('(max-width: 820px)'); // Використовуйте відповідний медіазапит тут
+  const isMobileView = useMediaQuery('(max-width: 820px)');
+  const location = useLocation();
 
   const handleClick = event => {
     setAnchorEl(event.currentTarget);
@@ -23,7 +37,7 @@ const MobileBtn = () => {
   };
 
   if (!isMobileView) {
-    return null; // Приховати компонент, якщо не в мобільному вигляді
+    return null;
   }
 
   return (
@@ -37,7 +51,7 @@ const MobileBtn = () => {
         onClick={handleClick}
         sx={{ color: '#166c65' }}
       >
-        <MoreVertIcon />
+        <MobileBtnSVG />
       </IconButton>
       <Menu
         id="long-menu"
@@ -56,11 +70,15 @@ const MobileBtn = () => {
       >
         {options.map(option => (
           <MenuItem
-            key={option}
-            selected={option === 'Pyxis'}
+            key={option.label}
             onClick={handleClose}
+            component={NavLink}
+            to={option.path}
+            exact
+            isActive={() => option.path === location.pathname}
+            activeClassName={active}
           >
-            {option}
+            {option.label}
           </MenuItem>
         ))}
       </Menu>
